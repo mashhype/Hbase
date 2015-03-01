@@ -1,0 +1,42 @@
+Script started on Mon 08 Dec 2014 02:05:07 AM EST
+]0;hdadmin@hdserver:~[?1034h[hdadmin@hdserver ~]$ java -cp /home/hdadmin/NetBeansProjects/HBaseProject/dist/HBaseProject.jar bdpuh.hbase.project.AddUser add kss k.s@gmail.com mypasswd married 1970/06/03 "favorite  color" "red"
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.metrics2.lib.MutableMetricsFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Record created successfully
+]0;hdadmin@hdserver:~[hdadmin@hdserver ~]$ java -cp /home/hdadmin/NetBeansProjects/HBaseProject/dist/HBaseProject.jar bdpuh.hbase.project.ShowUser show kss
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.metrics2.lib.MutableMetricsFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+-------------------------------------
+RowId: kss
+Creds:email: k.s@gmail.com
+Creds:password: mypasswd
+Prefs:status: married
+Prefs:date_of_birth: 1970/06/03
+Prefs:security_question: favorite color
+Prefs:security_answer: red
+Lastlogin:ip: null
+Lastlogin:date: null
+Lastlogin:time null
+Lastlogin:success null
+-------------------------------------
+]0;hdadmin@hdserver:~[hdadmin@hdserver ~]$ java -cp /home/hdadmin/NetBeansProjects/HBaseProject/dist/HBaseProject.jar bdpuh.hbase.project.LoginUser login kss mypasswd 128.220.101.100
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.metrics2.lib.MutableMetricsFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+]0;hdadmin@hdserver:~[hdadmin@hdserver ~]$ java -cp /home/hdadmin/NetBeansProjects/HBaseProject/dist/HBaseProject.jar bdpuh.hbase.project.ShowUser show kss
+log4j:WARN No appenders could be found for logger (org.apache.hadoop.metrics2.lib.MutableMetricsFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+-------------------------------------
+RowId: kss
+Creds:email: k.s@gmail.com
+Creds:password: mypasswd
+Prefs:status: married
+Prefs:date_of_birth: 1970/06/03
+Prefs:security_question: favorite color
+Prefs:security_answer: red
+Lastlogin:ip: 128.220.101.100
+Lastlogin:date: 2014/12/08
+Lastlogin:time 

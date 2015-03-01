@@ -1,0 +1,19 @@
+export CLASSPATH=~/home/hdadmin/NetbeansProjects/HBaseProject/dist/HBaseProject.jar:/usr/local/hadoop/hbase-0.99.1/lib/*.jar:/usr/local/hadoop/hbase-0.99.1/conf:.
+
+cd NetBeansProjects/HBaseProject/build/classes/bdpuh/hbase/project
+
+java -cp /home/hdadmin/NetBeansProjects/HBaseProject/dist/HBaseProject.jar bdpuh.hbase.project.AddUser add kss k.s@gmail.com mypasswd married 1970/06/03 "favorite color" "red"
+
+java -cp /home/hdadmin/NetBeansProjects/HBaseProject/dist/HBaseProject.jar bdpuh.hbase.project.ShowUser show kss
+
+java -cp /home/hdadmin/NetBeansProjects/HBaseProject/dist/HBaseProject.jar bdpuh.hbase.project.LoginUser login kss mypasswd 128.220.101.100
+
+java -cp /home/hdadmin/NetBeansProjects/HBaseProject/dist/HBaseProject.jar bdpuh.hbase.project.ShowUser show kss
+
+java -cp /home/hdadmin/NetBeansProjects/HBaseProject/dist/HBaseProject.jar bdpuh.hbase.project.AddUser add ms ms@gmail.com mypasswd married 1978/09/05 "favorite color" "blue"
+
+java -cp /home/hdadmin/NetBeansProjects/HBaseProject/dist/HBaseProject.jar bdpuh.hbase.project.ListAllUsers listall
+
+java -cp /home/hdadmin/NetBeansProjects/HBaseProject/dist/HBaseProject.jar bdpuh.hbase.project.DeleteUser delete ms
+
+java -cp /home/hdadmin/NetBeansProjects/HBaseProject/dist/HBaseProject.jar bdpuh.hbase.project.ListAllUsers listall
